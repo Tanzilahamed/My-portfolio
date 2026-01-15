@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center">
-            <img src={logo} alt="Tanzil.dev Logo" className="h-14 lg:h-20 w-auto" />
+            <img src={logo} alt="Tanzil.dev Logo" className="h-10 lg:h-12 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
