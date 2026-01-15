@@ -105,13 +105,13 @@ const Portfolio = () => {
                 </div>
 
                 {/* Content */}
-                <div className="p-6 md:p-8 lg:p-12 flex flex-col justify-center">
+                <div className="p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col justify-center">
                   <span className="text-primary text-sm font-medium mb-2">{project.year}</span>
-                  <h3 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-2">
+                  <h3 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-muted-foreground text-lg mb-4">{project.subtitle}</p>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-muted-foreground text-base sm:text-lg mb-4">{project.subtitle}</p>
+                  <p className="text-muted-foreground text-sm sm:text-base mb-6 leading-relaxed">
                     {project.description}
                   </p>
 
@@ -120,7 +120,7 @@ const Portfolio = () => {
                     {project.technologies.map((tech, i) => (
                       <span
                         key={i}
-                        className="px-3 py-1 bg-secondary rounded-full text-sm text-foreground"
+                        className="px-3 py-1 bg-secondary rounded-full text-xs sm:text-sm text-foreground"
                       >
                         {tech}
                       </span>
@@ -128,12 +128,12 @@ const Portfolio = () => {
                   </div>
 
                   {/* Actions */}
-                  <div className="flex gap-4">
-                    <Button variant="hero" size="lg">
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Button variant="hero" size="lg" className="w-full sm:w-auto">
                       <ExternalLink size={18} />
                       View Project
                     </Button>
-                    <Button variant="heroOutline" size="lg">
+                    <Button variant="heroOutline" size="lg" className="w-full sm:w-auto">
                       <Github size={18} />
                       Source Code
                     </Button>
