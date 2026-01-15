@@ -9,7 +9,7 @@ const projects = [
     technologies: ["React", "TypeScript", "OpenAI", "Node.js", "PostgreSQL"],
     year: "2025",
     featured: true,
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&auto=format&fit=crop&q=60",
+    image: "https://i.postimg.cc/wM0pZ1Mm/ezgif-5c77ff55d8f5117a.gif",
   },
   {
     title: "AI Customer Support Chatbot",
@@ -60,7 +60,8 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="py-20 lg:py-32 bg-card relative overflow-hidden">
+
+    <section id="portfolio" className="py-16 md:py-20 lg:py-32 bg-card relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
@@ -69,7 +70,7 @@ const Portfolio = () => {
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <span className="inline-block px-4 py-2 bg-secondary rounded-full text-primary text-sm font-medium mb-4">
             My Work
           </span>
@@ -88,7 +89,7 @@ const Portfolio = () => {
             <div className="group bg-gradient-card rounded-3xl border border-border overflow-hidden hover:border-primary/50 transition-all duration-500 hover:shadow-elevated">
               <div className="grid lg:grid-cols-2 gap-0">
                 {/* Image */}
-                <div className="relative overflow-hidden h-64 lg:h-auto">
+                <div className="relative overflow-hidden h-56 sm:h-64 lg:h-auto">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -97,14 +98,14 @@ const Portfolio = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-transparent lg:bg-gradient-to-l" />
                   
                   {/* Featured Badge */}
-                  <div className="absolute top-4 left-4 flex items-center gap-2 px-4 py-2 bg-gradient-primary rounded-full">
-                    <Sparkles size={16} className="text-primary-foreground" />
-                    <span className="text-primary-foreground text-sm font-semibold">Featured Project</span>
+                  <div className="absolute top-4 left-4 flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-gradient-primary rounded-full">
+                    <Sparkles size={14} className="text-primary-foreground sm:w-4 sm:h-4" />
+                    <span className="text-primary-foreground text-xs sm:text-sm font-semibold">Featured Project</span>
                   </div>
                 </div>
 
                 {/* Content */}
-                <div className="p-8 lg:p-12 flex flex-col justify-center">
+                <div className="p-6 md:p-8 lg:p-12 flex flex-col justify-center">
                   <span className="text-primary text-sm font-medium mb-2">{project.year}</span>
                   <h3 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-2">
                     {project.title}

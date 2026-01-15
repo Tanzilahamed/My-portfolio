@@ -33,13 +33,13 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-20 lg:py-32 bg-background relative overflow-hidden">
+    <section id="services" className="py-16 md:py-20 lg:py-32 bg-background relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-primary/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <span className="inline-block px-4 py-2 bg-secondary rounded-full text-primary text-sm font-medium mb-4">
             What I Do
           </span>
