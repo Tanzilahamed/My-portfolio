@@ -9,7 +9,7 @@ const projects = [
     technologies: ["React", "TypeScript", "OpenAI", "Node.js", "PostgreSQL"],
     year: "2025",
     featured: true,
-    image: "https://i.postimg.cc/wM0pZ1Mm/ezgif-5c77ff55d8f5117a.gif",
+    image: "https://i.postimg.cc/tg7CGQVr/Sample.gif",
   },
   {
     title: "AI Customer Support Chatbot",
